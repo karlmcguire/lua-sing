@@ -1,5 +1,5 @@
 # lua-sing
-Sing buffers for Lua.
+[Sing](https://github.com/karlmcguire/sing) buffers for Lua.
 
 **NOTE**: still under heavy development - don't use this yet.
 
