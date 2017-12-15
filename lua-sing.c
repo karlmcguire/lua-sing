@@ -18,8 +18,11 @@ lua_sing_push(lua_State *L) {
 	/* push argument string to sing_buffer */
 	sing_push(lua_touserdata(L, -1), (char *)lua_tostring(L, -2));
 
+	/* return true if there is no error */
+	lua_pushboolean(L, 1);
+
 	/* return nothing */
-	return 0;
+	return 1;
 }
 
 /* lua_sing_shift is called with buffer:shift() and shifts the buffer, returning
